@@ -171,7 +171,7 @@ h6 {
 
 a {
     text-decoration: none;
-    color: gray;
+    color: black;
 }
 
 h1 {
@@ -214,6 +214,14 @@ header {
 .nav-bar a {
     padding: 0.3% 2%;
     border-radius: 8px;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
 }
 
 .subtitle {
@@ -221,11 +229,10 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
 }
 
 .intro {
-    /* border: 1px solid blue; */
     width: 80%;
     display: flex;
     flex-flow: column nowrap;
@@ -242,6 +249,10 @@ header {
 
 /* Main Focus Image */
 
+img {
+    transition: 0.5s
+}
+
 .focus {
     display: flex;
     width: 100%;
@@ -254,11 +265,19 @@ header {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    border-radius: 8%;
 }
 
 .body-img img {
-    width: 95%;
-    /* height: 40vh; */
+    width: 96.5%;
+    border-radius: 8%;
+}
+
+.body-img img:hover {
+    transform: scale(1.2);
+    border-radius: 8%;
+    width: 96.5%;
+    overflow: hidden;
 }
 
 
@@ -267,6 +286,7 @@ header {
 .bot {
     width: 100%;
     display: flex;
+    margin-top: 2%;
 }
 
 .side-pic {
@@ -275,26 +295,53 @@ header {
     flex: row nowrap;
     justify-content: space-around;
     overflow: hidden;
+    border-radius: 20%;
 }
 
 .side-pic img {
-    border: 1px solid black;
     width: 20%;
+    border-radius: 10%;
+}
+
+.side-pic img:hover {
+    transform: scale(1.1);
+    overflow: auto;
 }
 
 .blurb {
     width: 30%;
-    border: 1px solid grey;
+    text-align: center;
+    margin-right: 2.5%;
+    margin-top: 2%;
 }
 
 
 /* Footer  */
 
 footer {
-    border: 1px solid blue;
     width: auto%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     padding: 1%
+}
+
+.contact-me {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-me a {
+    padding: 5% 30%;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.contact-me a:hover {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
 }
