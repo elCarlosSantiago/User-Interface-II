@@ -1,1 +1,347 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Reset Above */
+
+
+/* Styling */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid grey; */
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat' monospace, Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+
+/* Header Styles */
+
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    align-content: space-evenly;
+    justify-content: center;
+}
+
+.title {
+    width: auto%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 1%
+}
+
+.nav-bar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+.nav-bar a {
+    padding: 0.3% 2%;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+}
+
+.subtitle {
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+.intro {
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.intro p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+/* Main Focus Image */
+
+img {
+    transition: 0.5s
+}
+
+.focus {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+.body-img {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 8%;
+}
+
+.body-img img {
+    width: 96.5%;
+    border-radius: 8%;
+}
+
+.body-img img:hover {
+    transform: scale(1.2);
+    border-radius: 8%;
+    width: 96.5%;
+    overflow: hidden;
+}
+
+
+/* bottom section */
+
+.bot {
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+}
+
+.side-pic {
+    width: 70%;
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-around;
+    overflow: hidden;
+    border-radius: 20%;
+}
+
+.side-pic img {
+    width: 20%;
+    border-radius: 10%;
+}
+
+.side-pic img:hover {
+    transform: scale(1.1);
+    overflow: auto;
+}
+
+.blurb {
+    width: 30%;
+    text-align: center;
+    margin-right: 2.5%;
+    margin-top: 2%;
+}
+
+
+/* Footer  */
+
+footer {
+    width: auto%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 1%
+}
+
+.contact-me {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-me a {
+    padding: 5% 30%;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.contact-me a:hover {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+}
